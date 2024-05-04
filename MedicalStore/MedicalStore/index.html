@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>Medical Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="signup">
+            <h3>Sign Up Page</h3>
+            <label class="signup">User Name</label><input type="text" id="username"><br><br>
+            <label class="signup1">Email</label><input type="email" id="email"><br><br>
+            <label class="signup2">Phone Number</label><input type="text" id="phone"><br><br>
+            <label class="signup3">Password</label><input type="password" id="password"><br><br>
+            <label class="signup4">Confirm Password</label><input type="password" id="cpassword"><br><br>
+            <label class="signup5">Balance</label><input type="number" id="balance"><br><br>
+            <button onclick="SignUp()">Signup</button>
+        </div>
+        <div id="existingUserPage">
+
+            <h3>Sign In Page</h3>
+            <label>User ID</label>
+            <input type="text" id="existingUserId">
+            <button type="button" onclick="signIn()">Sign In</button><br>
+        </div>
+
+        <br>
+
+        <div>
+            <button onclick="home()">Home</button>
+            <button onclick="ShowMed()">Medicine Detail</button>
+            <button onclick="PurchaseTable()">Purchase</button>
+            <button onclick="delord()">Cancel</button>
+            <button id="topup" onclick="up()">Topup</button>
+            <button onclick="ShowBalance()">Show Balance</button>
+            <button onclick="order()">Order History</button>
+        </div>
+
+        <br>
+
+
+        <!-- Medicine Details -->
+        <div>
+            <table id="dataTable" border="1">
+                <thead>
+                    <tr>
+                        <td>Medicine Name</td>
+                        <td>Medicine Count</td>
+                        <td>Medicine Price</td>
+                        <td>Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Will be displayed using Typescript-->
+                </tbody>
+            </table>
+        </div>
+
+        <!--Purchase Table-->
+        <div>
+            <table id="purchasetable" border="1">
+                <thead>
+                    <tr>
+                        <td>Medicine Name</td>
+                        <td>Medicine Count</td>
+                        <td>Medicine Price</td>
+                        <td>Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Will be displayed using Typescript-->
+                </tbody>
+            </table>
+        </div>
+        <!--Cancel  Table-->
+
+        <div>
+            <table id="canceltable" border="1">
+                <thead>
+                    <tr>
+                        <td>User Id</td>
+                        <td>Medicine Id</td>
+                        <td>Medicine Name</td>
+                        <td>Medicine Count</td>
+                        <td>Medicine Price</td>
+                        <td>Order Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Will be displayed using Typescript-->
+                </tbody>
+            </table>
+        </div>
+
+
+        
+
+        <div>
+            <table id="data2" border="1">
+                <thead>
+                    <tr>
+                        <td>User Id</td>
+                        <td>Medicine Id</td>
+                        <td>Medicine Name</td>
+                        <td>Medicine Count</td>
+                        <td>Medicine Price</td>
+                        <td>Order Status</td>
+                        <td>Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Will be displayed using Typescript-->
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table id="data1" border="1">
+                <thead>
+                    <tr>
+                        <td>User Id</td>
+                        <td>Medicine Id</td>
+                        <td>Medicine Name</td>
+                        <td>Medicine Count</td>
+                        <td>Medicine Price</td>
+                        <td>Order Status</td>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Will be displayed using Typescript-->
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+
+        <!--Recharge Wallet-->
+        <div id="top" style="display: none;">
+            <label>Enter Amount to Recharge</label>
+            <input id="rechargeamount" type="number">
+            <button onclick="walletRecharge()">Recharge</button>
+        </div>
+        <div id="medicine"  style="display: none;">
+            <select id="select" value="medicine">
+                <option>Paracetomol</option>
+                <option>Colpal</option>
+                <option>Stepsil</option>
+                <option>Iodex</option>
+                <option>Acetherol</option>
+            </select>
+            <button onclick="Check()">Check</button>
+            <label id="check" style="display: none;"></label>
+        </div>
+        <div id="quantity" style="display: none;">
+            <label>Enter the Medicine Name</label>
+            <input type="text"  id="mednam">
+            <label>Enter the Quantity</label>
+            <input type="number"  id="quan">
+            <button id="buy" onclick="purchase()">Buy</button>
+        </div>
+        <div>
+            <label id="historyDisplay"></label>
+        </div>
+        <div id="welcome" style="display: none;">
+            <h1>Welcome</h1>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
