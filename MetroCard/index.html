@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Metro Card</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+
+        <div class="front" id="front">
+            <button onclick="signupDisplay()"  id="signup">Sign Up</button>
+            <button onclick="signinDisplay()" id="signin">Sign In</button>
+        </div>
+        <br>
+
+        <div id="form">
+            <form>
+            <label>Name</label><input type="text" id="name"><br>
+            <label>Phone Number</label><input type="text" id="phone"><br><br>
+            <label>Balance</label><input type="number" id="balance"><br><br>
+            <button id="Sign up" onclick="signUp()" >Submit</button>
+            </form>
+        </div>
+        
+        <div id="loginform">
+            <h2>Sign In</h2>
+            <label>Card Number </label>
+            <input type="text" id="login">
+            <button onclick="signIn()">Sign in</button>
+        </div>
+        <br>
+        <div id="front2">
+            <button id="home" onclick="Home()">Home</button>
+            <button id="ticketfair" onclick="ticketFairTable()">Ticket Fair Details</button>
+            <button id="travel1" onclick="fairTables()">Travel</button>
+            <button id="travelhistory" onclick="travelsTable()">Travel History</button>
+            <button id="recharge" onclick="RechargeDisplay()">Recharge</button>
+            <button id="balancecheck" onclick="BalanceCheck()">Balance Check</button>
+        </div><br>
+        
+        <div id="ticktable">
+            <table id="ticketTable" border="3">
+                <thead>
+                    <tr>
+                        <td>Ticket ID</td>
+                        <td>From Location</td>
+                        <td>To Location</td>
+                        <td>Fair</td>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <!---->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="travletable">
+            <table id="travelTable" border="3">
+                <thead>
+                    <tr>
+                        <td>Travel ID</td>
+                        <td>Card Number</td>
+                        <td>From Location</td>
+                        <td>To Location</td>
+                        <td>Travel Cost</td>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <!---->
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="fatable">
+            <table id="fairtable" border="3">
+                <thead>
+                    <tr>
+                        <td>Ticket ID</td>
+                        <td>From Location</td>
+                        <td>To Location</td>
+                        <td>Fair</td>
+                        <td>Action</td>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <!---->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="travel">
+            <form>
+                <label>Enter the Ticket ID of Ticket fair you wish to travel</label>
+                <input type="number" id="book">
+                <button onclick="Travel()">Book</button>
+            </form>
+        </div>
+
+        <div id="welcome">
+            <form>
+                <label>Welcome</label>
+            </form>
+            
+        </div>
+        <div id="rechargeform">
+            <h1>Recharge Your Account</h1>
+            <form>
+            <label>Enter the Recharge Amount</label>
+            <input type="number" id="recharge">
+            <button onclick="Recharge()">Recharge</button>
+            </form>
+        </div>
+        <div id="balancecheck1">
+            <form>
+                
+            <label>Your Balance is: </label>
+            </form>
+        </div>
+        <div>
+            <h1></h1>
+        </div>
+
+
+    </body>
+    <script src="index.js"></script>
+</html>

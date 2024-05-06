@@ -1,8 +1,10 @@
 .signup{
     margin-right:71px;
+
 }
 .signup1{
     margin-right:105px;
+   
 }
 .signup2{
     margin-right:46px;
@@ -15,4 +17,33 @@
 }
 .signup5{
     margin-right:90px;
+}
+#signup{
+    display:none;
+}
+#existingUserPage{
+    display:none;
+
+}
+
+#meddetails{
+    display: none;
+}
+#purdetails{
+    display: none;
+}
+#cancdetails{
+    display: none;
+}
+#canbuttondetails{
+    display:none;
+}
+#tab{
+    display: none;
+}
+#blc{
+    display:none;
+}
+#O{
+    display: none;
 }

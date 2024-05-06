@@ -4,6 +4,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div>
+            <button onclick="sign()">Sign Up</button>
+            <button onclick="log()">Sign In</button>
+
+        </div>
         <div id="signup">
             <h3>Sign Up Page</h3>
             <label class="signup">User Name</label><input type="text" id="username"><br><br>
@@ -18,13 +23,13 @@
 
             <h3>Sign In Page</h3>
             <label>User ID</label>
-            <input type="text" id="existingUserId">
+            <input type="number" id="existingUserId">
             <button type="button" onclick="signIn()">Sign In</button><br>
         </div>
 
         <br>
 
-        <div>
+        <div id="menu">
             <button onclick="home()">Home</button>
             <button onclick="ShowMed()">Medicine Detail</button>
             <button onclick="PurchaseTable()">Purchase</button>
@@ -35,10 +40,13 @@
         </div>
 
         <br>
+        <div id="blc">
+            <h1 id="bal"></h1>
+        </div>
 
 
         <!-- Medicine Details -->
-        <div>
+        <div id="meddetails">
             <table id="dataTable" border="1">
                 <thead>
                     <tr>
@@ -55,7 +63,7 @@
         </div>
 
         <!--Purchase Table-->
-        <div>
+        <div id="purdetails">
             <table id="purchasetable" border="1">
                 <thead>
                     <tr>
@@ -72,7 +80,7 @@
         </div>
         <!--Cancel  Table-->
 
-        <div>
+        <div id="cancdetails">
             <table id="canceltable" border="1">
                 <thead>
                     <tr>
@@ -89,11 +97,11 @@
                 </tbody>
             </table>
         </div>
-
+        
 
         
 
-        <div>
+        <div id="canbuttondetails">
             <table id="data2" border="1">
                 <thead>
                     <tr>
@@ -111,7 +119,7 @@
                 </tbody>
             </table>
         </div>
-        <div>
+        <div id="tab">
             <table id="data1" border="1">
                 <thead>
                     <tr>
